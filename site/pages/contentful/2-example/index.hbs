@@ -1,0 +1,17 @@
+{{#extends "default"}}
+
+{{#block "content"}}
+
+	<h1 class="book-name">
+		{{page.fields.name}}
+	</h1>
+	<div class="book-author">
+		by <strong>{{page.fields.author}}</strong>
+	</div>
+	<div class="book-description">
+		{{page.fields.description}}
+	</div>
+
+{{/block}}
+
+{{/extends}}
