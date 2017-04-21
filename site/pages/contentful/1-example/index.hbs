@@ -11,16 +11,16 @@
 		Books
 	</h1>
 	<ul>
-		{{#each page.books}}
+		{{#each page.items}}
 		<li>
 			<h2>
-				{{this.name}}
+				{{this.fields.name}}
 			</h2>
 			<p>
-				by <strong>{{this.author}}</strong>
+				by <strong>{{this.fields.author}}</strong>
 			</p>
 			<div class="book-description">
-				{{this.description}}
+				{{this.fields.description}}
 			</div>
 		</li>
 		{{/each}}

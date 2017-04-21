@@ -1,7 +1,11 @@
 # starter-kit-contentful
 This is a starter kit used for initializing a new Orchid Lead project.
 
-Initialize a new project with the following command `orchid-lead init --with orchid-lead/starter-kit-contentful`. Note, this depends on the contentful-sdk.
+Initialize a new project with the following command `orchid-lead init --with orchid-lead/starter-kit-contentful`. Note, this starter kit requires the Contentful SDK for JavaScript.
+
+```bash
+npm install contentful
+```
 
 This is a great starting point for someone who wants to generate HTML from Handlebars files with data pulled from Contentful.
 
