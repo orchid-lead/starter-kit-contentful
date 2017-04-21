@@ -1,0 +1,18 @@
+body {
+	max-width: 40em;
+	margin: 2em auto;
+}
+h1 {
+	font-weight: lighter;
+	font-size: 2.5em;
+}
+samp {
+	color: #000;
+}
+dt {
+	font-family: monospace;
+}
+dl p {
+	font-style: italic;
+	color: #545454;
+}

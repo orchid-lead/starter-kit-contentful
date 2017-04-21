@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+<head>
+
+    <meta charset="utf-8">
+    <title>
+        {{#if page.title}}
+            {{page.title}}
+        {{else}}
+            {{site.title}}
+        {{/if}}
+    </title>
+
+    {{#block "styles"}}
+        <link rel="stylesheet" href="/styles.css" />
+    {{/block}}
+
+</head>
+<body>
+
+    {{#block "content"}}
+        <h1>Hello, World!</h1>
+    {{/block}}
+
+    {{> footer}}
+
+    {{#block "scripts"}}
+        <script src="/scripts.js"></script>
+    {{/block}}
+
+</body>
+</html>

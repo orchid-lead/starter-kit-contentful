@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Contentful Example 1</title>
+
+</head>
+<body>
+
+	<h1>
+		Books
+	</h1>
+	<ul>
+		{{#each page.books}}
+		<li>
+			<h2>
+				{{this.name}}
+			</h2>
+			<p>
+				by <strong>{{this.author}}</strong>
+			</p>
+			<div class="book-description">
+				{{this.description}}
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+
+</body>
+</html>

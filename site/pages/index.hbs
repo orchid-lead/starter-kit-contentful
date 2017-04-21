@@ -1,0 +1,106 @@
+---
+title: Default Starter Kit for Orchid Lead
+lang: en
+---
+{{#extends "default"}}
+
+{{#block "content"}}
+    <h1>
+        {{page.title}}
+    </h1>
+    <p>
+        This is the default starter kit for Orchid Lead. It is what you get when you run <kbd>`orchid-lead init`</kbd> without specifying a starter kit. It has no dependancies beyond Orchid Lead itself.
+    </p>
+    <p>
+        This is a great starting point for someone who wants to try Orchid Lead. This starter kit will help newcomers understand how Orchid Lead works and what it can do.
+    </p>
+    <p>
+        Edit the <samp>site/pages/index.hbs</samp> file to change the contents of this page or edit the <samp>site/layouts/default.hbs</samp> to change the contents of the layout. The the listing below describes the rest of the files included in this project.
+    </p>
+    <dl>
+        <dt>build/</dt>
+        <dd>
+            <p>the output folder for the site</p>
+        </dd>
+        <dt>site/</dt>
+        <dd>
+            <p>the source folder for the site</p>
+            <dl>
+                <dt>data.js</dt>
+                <dd>
+                    <p>site wide data made available to all Handlerbars templates with \{{site}}</p>
+                </dd>
+                <dt>helpers/</dt>
+                <dd>
+                    <p>a folder for custom Handlebars helpers</p>
+                    <dl>
+                        <dt>year.js</dt>
+                        <dd>
+                            <p>an example helper that returns the current year</p>
+                        </dd>
+                    </dl>
+                </dd>
+                <dt>layouts/</dt>
+                <dd>
+                    <p>a folder for Wax On layout files</p>
+                    <dl>
+                        <dt>
+                            default.hbs
+                        </dt>
+                        <dd>
+                            <p>the default layout</p>
+                        </dd>
+                    </dl>
+                </dd>
+                <dt>pages/</dt>
+                <dd>
+                    <p>the source folder for all the pages in the site</p>
+                    <dl>
+                        <dt>index.css</dt>
+                        <dd>
+                            <p>CSS local to the home page</p>
+                        </dd>
+                        <dt>index.hbs</dt>
+                        <dd>
+                            <p>the Hanblebars template used to create the home page</p>
+                        </dd>
+                        <dt>index.js</dt>
+                        <dd>
+                            <p>JavaScript local to the home page</p>
+                        </dd>
+                        <dt>scripts.js</dt>
+                        <dd>
+                            <p>JavaScript included in the default layout</p>
+                        </dd>
+                        <dt>styles.css</dt>
+                        <dd>
+                            <p>CSS included in the default layout</p>
+                        </dd>
+                    </dl>
+                </dd>
+                <dt>partials/</dt>
+                <dd>
+                    <p>a folder for custom parial Handlebars templates to include in other Handlebars templates</p>
+                    <dd>
+                        <dl>
+                            <dt>footer.hbs</dt>
+                            <dd>
+                                <p>a partial Handlebars template that is included in the default layout</p>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dd>
+            </dl>
+        </dd>
+    </dl>
+{{/block}}
+
+{{#append "styles"}}
+    <link rel="stylesheet" href="index.css" />
+{{/append}}
+
+{{#append "scripts"}}
+        <script src="/index.js"></script>
+{{/append}}
+
+{{/extends}}
