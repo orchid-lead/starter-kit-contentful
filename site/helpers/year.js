@@ -4,6 +4,6 @@
  * @returns {String} the current year
  */
 module.exports = function year (options) {
-    console.log(options);
+    // console.log(options);
     return (new Date()).getFullYear();
 };
